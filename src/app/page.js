@@ -1,4 +1,5 @@
-import HelloWorld from "./components/HelloWorld";
+"use client"
+import HelloWorld , {AnotherChild} from "./components/HelloWorld";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -11,6 +12,8 @@ export default function Home() {
       <div className={styles.center}>
         
       </div>
+
+      <AnotherChild />
 
       <div className={styles.grid}>
         <HelloWorld />

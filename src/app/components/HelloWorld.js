@@ -1,4 +1,4 @@
-function AnotherChild()
+export function AnotherChild()
 {
   return (<div>
     Another Child
