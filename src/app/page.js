@@ -1,4 +1,5 @@
 "use client"
+import Container from "./components/Container";
 import Greeting from "./components/Greeting";
 import HelloWorld , {AnotherChild} from "./components/HelloWorld";
 import JSXDemo from "./components/JSXDemo";
@@ -14,7 +15,7 @@ let profile = {
 
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
+      {/* <div className={styles.description}>
         <h1>Header</h1>
       </div>
 
@@ -34,7 +35,12 @@ let profile = {
       <Greeting name={"KTH"}/>
       <Greeting name={"KTH"} age={23}/>
 
-      <Profile profile={profile} />
+      <Profile profile={profile} /> */}
+
+      <Container message={"Message from page"}>
+        <h1>Hello</h1>
+        <p>Its me!!!!</p>
+      </Container>
 
     </main>
   );
